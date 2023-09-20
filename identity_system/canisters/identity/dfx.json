@@ -14,12 +14,22 @@
     "networks": {
       "local": {
         "bind": "127.0.0.1:8000",
-        "type": "ephemeral"
+        "type": "motoko"
       }
     },
     "wallets": {
       "local": {
-        "type": "ephemeral"
+        "type": "motoko"
       }
     }
   }
+"internet_identity": {
+  "type": "custom",
+  "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+  "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm",
+  "remote": {
+    "id": {
+      "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    }
+  }
+}
