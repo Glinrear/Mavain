@@ -1,0 +1,25 @@
+{
+    "canisters": {
+      "identity": {
+        "main": "src/identity.mo",
+        "type": "custom"
+      }
+    },
+    "defaults": {
+      "build": {
+        "output": "canisters/"
+      }
+    },
+    "dfx": "0.8.2",
+    "networks": {
+      "local": {
+        "bind": "127.0.0.1:8000",
+        "type": "ephemeral"
+      }
+    },
+    "wallets": {
+      "local": {
+        "type": "ephemeral"
+      }
+    }
+  }
